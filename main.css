@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #ecd1b8;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 16px 0;
+    background-color: #a87245;
+    color: #422e1d;
+}
+
+footer {
+    padding: 5px 0;
+    background-color: #a87245;
+    color: #422e1d;
+}
+
+.nome h3 {
+    color: rgb(39, 35, 32);
+    margin-left: 20px;
+}
+
+#nome-e-logo {
+    display: flex;
+    gap: 30px;
+}
+
+#nome-e-logo img {
+    max-height: 50px;;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 30px;
+    font-size: 24px;
+}
+
+header nav li a {
+    color: #422e1d;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header nav li a:hover {
+    color: #2b1809;
+    border-top: 5px solid #2b1809;
+}
+
+section {
+    padding: 24px;
+    color: #422e1d;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h2 {
+    padding-bottom: 8px;
+}
+
+header .container,
+#sobre .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo {
+    border-top: 2px solid #2b1809;
+    padding-top: 24px;
+}
+
+.titulo {
+    display: flex;
+    gap: 24px;
+    align-content: center;
+}
+
+.titulo img {
+    max-height: 30px;
+}
+
+#sobre .conteudo {
+    align-items: flex-start;
+}
+
+#sobre p {
+    margin-bottom: 18px;
+    text-indent:4em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+#store {
+    margin-right: 32px;
+    max-width: 400px;
+    margin-bottom: 12px;
+}
+
+/* Contêiner das marcas */
+.brands {
+    display: flex;
+    justify-content: space-between; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente ao centro */
+    flex-wrap: wrap; /* Permite que os itens quebrem para uma nova linha se necessário */
+    list-style: none; /* Remove os marcadores padrão da lista */
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo das imagens das marcas */
+.brands li {
+    margin: 10px; /* Espaçamento entre as imagens */
+    text-align: center; /* Centraliza o texto no item da lista */
+}
+
+.brands img {
+    display: block; /* Garante que a imagem se comporte como um bloco */
+    margin: 0 auto; /* Centraliza a imagem dentro do seu contêiner pai */
+    max-height: 70px; /* Define um limite máximo para a altura das imagens */
+    width: auto; /* Mantém a proporção da largura */
+}
+
+#icone1 {
+    height: 50px;
+}
+
+#icone2 {
+    height: 70px;
+}
+
+#icone3 {
+    height: 36px;
+}
+
+#icone4 {
+    height: 80px;
+}
+
+.produtos h3 {
+    padding: 8px 0 16px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1%;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc; /* Bordas para visualização */
+    background-color: #fff;
+    height: 100%; /* Para garantir altura igual */
+}
+
+.produto img {
+    max-width: 200px;
+    max-height: 200px;
+    height: 100%;
+    margin-bottom: 10px; /* Espaço entre a imagem e o conteúdo */
+}
+
+.produto-conteudo {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Espaço entre o conteúdo e o botão */
+    text-align: center;
+}
+
+.produto-conteudo strong {
+    margin-top: 12px;
+    padding: 8px; /* Ajuste conforme necessário */
+    display: inline-block; /* Para garantir que o padding seja aplicado */
+    border: 1px solid #422e1d;
+    text-align: center;
+}
+
+.produto-acoes {
+    display: flex;
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    align-items: flex-end; /* Garante que o botão fique na parte inferior */
+}
+
+button {
+    width: 100%;
+    padding: 6px;
+    background-color: #422e1d;
+    color: #ecb282;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #926d4c;
+    color: #2b1809;
+    transition: 0.5s;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+    display: inline;
+}
+
+footer li img {
+    height: 32px;
+}
+
+footer li a {
+    text-decoration: none;
+}
+
+/* aplicação das fontes */
+body {
+    font-family: 'Merriweather', serif; /* Texto principal */
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif; /* Títulos */
+}
+
+nav ul li {
+    font-family: 'Oswald', sans-serif; /* Navegação */
+}
+
+.button {
+    font-family: 'Anton', sans-serif; /* Botões */
+}
+
+.description {
+    font-family: 'Lora', serif; /* Descrições de produtos */
+}
+
+/* Aplicação de responsividade */
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    #sobre .container {
+        display: block; /* Use flex para centralizar a imagem */
+        text-align: center; /* Center-align text and inline content */
+    }
+
+    #imagem-loja {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px; /* Espaço abaixo da imagem */
+    }
+
+    #store {
+        margin: 0 auto; /* Margin auto para centralizar */
+        max-width: 100%; /* Limitar largura para 100% */
+        height: auto; /* Manter a proporção */
+    }
+
+    .brands {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .brands li {
+        display: inline;
+        justify-content: space-between;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1%;
+    }
+
+    .produto {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .nome h1 {
+        font-size: 20px;
+    }
+    
+    .nome h3 {
+        color: rgb(39, 35, 32);
+        margin-left: 8px;
+        font-size: 12px;
+    }
+    
+    #nome-e-logo {
+        display: flex;
+        gap: 8px;
+    }
+    
+    #nome-e-logo img {
+        max-height: 40px;
+    }
+    
+    header .container {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav li {
+        display: block;
+        margin: 0px;
+        font-size: 18px;
+    }
+    
+    header nav li a {
+        color: #422e1d;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
+    .container {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #sobre .container {
+        display: block;
+    }
+
+    #store {
+        width: 100%;;
+        margin-bottom: 12px;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    .produto {
+        margin-bottom: 5px;
+    }
+
+    .produto {
+        display: flex;
+        align-items: center;
+    }
+
+}
